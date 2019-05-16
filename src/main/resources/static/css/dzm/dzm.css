@@ -1,8 +1,0 @@
-.box_top{ height: 61px; background-color: #fff; width:1120px; margin:0 auto;}
-.subpage_box{ width:1000px; margin:0 auto; background:#fff;}
-.subpage_content{ padding:0px ;  background:#fff;}
-.subpage_title{ height: 46px; line-height: 46px; font-size: 18px; color: #666; margin:0; padding-left:15px;  background: #fbfbfb; border: 1px solid #e8e8e8;}
-.subpage_box h1 span{width:27px; height:46px; background:url(../images/nanj/subpage/dot_subpage.png) no-repeat 0 10px; display:inline-block; padding-left:10px; margin-right:12px; }
-.subpage_content iframe{ overflow-x:hidden; }
-
-.subpage_opt{ height: 46px; line-height: 46px; font-size: 18px; margin:0; padding-left:15px;}
