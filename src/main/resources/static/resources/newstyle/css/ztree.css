@@ -1,0 +1,49 @@
+/* 二级菜单 */
+.ztree a { cursor:pointer; }
+.ztree a:hover { text-decoration:none !important; }
+.ztree li {zoom:1;background-color:#eaf0ee; position:relative;  }
+.ztree li ul {zoom:1;}
+/*  lvl0  */
+.ztree .level0 a.level0 { border-bottom:1px solid #d9d9d9; }
+.ztree .level0 a.level0 { height:40px; display:block; background-color: #fff; color:#545454; font-size:14px; line-height:40px; position:relative;  }
+.ztree .level0 a.level0.cur { background-color: #21a27a; border-bottom:1px solid #d9d9d9; }
+.ztree .level0 .cur span { color:#fff; }
+.ztree .level0 a.level0 span.button { float:left; margin:12px 10px 0 15px; }
+.ztree .level0 span.button.switch.level0 { display:block; position:absolute; right:15px; top:12px; z-index:4; }
+.ztree .level0 .level0.roots_close { background:url(../images/icon_arrow.png) center center no-repeat; _background:url(../images/icon_arrow.gif) center center no-repeat; }
+.ztree .level0 .level0.roots_open { background:url(../images/icon_arrow_hover.png) center center no-repeat; _background:url(../images/icon_arrow_hover.gif) center center no-repeat; }
+.ztree .level0 .level0.center_close { background:url(../images/icon_arrow.png) center center no-repeat; _background:url(../images/icon_arrow.gif) center center no-repeat; }
+.ztree .level0 .level0.center_open { background:url(../images/icon_arrow_hover.png) center center no-repeat; _background:url(../images/icon_arrow_hover.gif) center center no-repeat; }
+.ztree .level0 .level0.bottom_close { background:url(../images/icon_arrow.png) center center no-repeat; _background:url(../images/icon_arrow.gif) center center no-repeat; }
+.ztree .level0 .level0.bottom_open { background:url(../images/icon_arrow_hover.png) center center no-repeat; _background:url(../images/icon_arrow_hover.gif) center center no-repeat; }
+.ztree span.button { width:16px; height:16px; }
+.ztree ul.line { position:relative; }
+/*  lvl1  */
+.ztree .level1 a.level1 { display:block; height:34px; border-bottom:1px solid #d9d9d9; }
+.ztree .level1 ul.level1 { border-bottom:1px solid #d9d9d9; }
+.ztree .level1 a.level1 span { float:left; font-size:13px; line-height:34px; }
+.ztree .level1 a.level1 .ico_docu { margin:9px 10px 0 15px; background:url(../images/icon_menu_level2.png) center center no-repeat; _background:url(../images/icon_menu_level2.gif) center center no-repeat; }
+.ztree .level1 a.level1 .ico_open { margin:9px 10px 0 15px; background:url(../images/icon_menu_level2_hover.png) center center no-repeat; _background:url(../images/icon_menu_level2_hover.gif) center center no-repeat; }
+.ztree .level1 a.level1 .ico_close { margin:9px 10px 0 15px; background:url(../images/icon_menu_level2.png) center center no-repeat; _background:url(../images/icon_menu_level2.gif) center center no-repeat; }
+.ztree .level1 span.button.level1.roots_close { background:url(../images/icon_plus.png) center center no-repeat; _background:url(../images/icon_plus.gif) center center no-repeat; }
+.ztree .level1 span.button.level1.roots_open { background:url(../images/icon_minus.png) center center no-repeat; _background:url(../images/icon_minus.gif) center center no-repeat; }
+.ztree .level1 span.button.level1.center_close { background:url(../images/icon_plus.png) center center no-repeat; _background:url(../images/icon_plus.gif) center center no-repeat; }
+.ztree .level1 span.button.level1.center_open { background:url(../images/icon_minus.png) center center no-repeat; _background:url(../images/icon_minus.gif) center center no-repeat; }
+.ztree .level1 span.button.level1.bottom_close { background:url(../images/icon_plus.png) center center no-repeat; _background:url(../images/icon_plus.gif) center center no-repeat; }
+.ztree .level1 span.button.level1.bottom_open { background:url(../images/icon_minus.png) center center no-repeat; _background:url(../images/icon_minus.gif) center center no-repeat; }
+.ztree .level1 span.button.switch.level1 { display:block; position:absolute; right:15px; top:9px; z-index:4; }
+.ztree .level1 .level1.center_docu { background:none; }
+.ztree .level1 a.level1.cur1 { background-color: #dae0de; }
+.ztree .level1 a.level1.cur1 .ico_docu { background:url(../images/icon_menu_level2_hover.png) center center no-repeat; _background:url(../images/icon_menu_level2_hover.gif) center center no-repeat; }
+.ztree .level1 a.level1.bottom_docu { background:none; }
+.ztree .level1 span.bottom_docu.button{background-image:none;}
+.ztree .level1 span.button{background-image:none;}
+/*  lvl2  */
+.ztree .level2 .roots_docu { display:none; }
+.ztree .level2 .center_docu { display:none; }
+.ztree .level2 .bottom_docu { display:none; }
+.ztree .level2 a.level2 { display:block; height:32px; }
+.ztree .level2 a.level2 span { float:left; font-size:12px; line-height:32px; }
+.ztree .level2 a.level2 .ico_docu { margin:0 10px 0 40px; width:11px; height:32px; background:url(../images/icon_menu_level3.png) 0 0 no-repeat; _background:url(../images/icon_menu_level3.gif) 0 0 no-repeat; }
+.ztree .level2 a.level2:hover span { color:#21a27a; }
+.ztree .level2 a.level2.curSelectedNode span { color:#21a27a; }

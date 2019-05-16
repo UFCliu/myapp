@@ -1,0 +1,192 @@
+.list_view{
+	display:inline-block;
+	*zoom:1;
+	*display:inline;
+	margin-left:320px;
+	margin-top:-20px;
+	width:520px;
+	height:242px;
+}
+.list_view .list_box{
+	float:left;
+	width:210px;
+	height:240px;
+	border:1px solid #ccc;
+	border-radius:2px;
+	background-color:#fff;
+	
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.list_view .list_box li{
+	margin:0;
+	display:block;
+	padding:0 5px;
+	height:30px;
+	line-height:30px;
+}
+.list_view .list_box li:hover{background-color:#f1f1f1;}
+.list_view .list_box li.selected{background-color:#d5d5d5;}
+.list_view .buttons{
+	float:left;
+	padding:0 10px;
+	width:40px;
+	height:240px;
+}
+.list_view .buttons a{
+	margin:10px 0 0;
+	float:left;
+	width:100%;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	color:#fff;
+	border-radius:2px;
+	background-color:#428bca;
+	
+}
+.list_view .buttons .m_t_40{margin-top:40px;}
+#qual_list li{
+	width:500px;
+	height:230px;
+	border:1px solid #ddd;
+	margin: 10px;
+	padding: 2px;
+	position: relative;
+	margin-left: 100px;
+}
+#qual_list li input{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 5px;
+	position: relative;
+	width:65%;
+	float:left;
+}
+#qual_list li img {
+	width:165px;
+	height:130px;
+	display: block;
+	margin: 15px 0px;
+}
+#qual_list li h5 {
+	margin-left: 5px;
+	color: #21a27a;
+	font-size: 15px;
+	height: 30px;
+	line-height: 30px;
+}
+#qual_list li .info {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    width:315px;
+    height:160px;
+}
+.inline-block{
+	display: inline-block;
+	margin: 5px 0;
+}
+
+#qual_list li label {
+	    width: 60px;
+}
+#qual_list li .btn {
+	background-color: #21a27a !important;
+	color: #fff;
+	display: none;
+	float: none;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 10px;
+	text-align: center;
+	width: 100px;
+}
+#qual_list li span {
+    display: block;
+    width: 30px;
+    height: 32px;
+    padding-left: 0;
+    line-height: 32px;
+    white-space: nowrap;
+}
+.qual_list .qual_error_msg{
+	color:#f00;
+}
+#qualUpload_popup .filePrew {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 39px;
+	font-size: 100px; /* 增大不同浏览器的可点击区域 */
+	opacity: 0; /* 实现的关键点 */
+	filter:alpha(opacity=0);/* 兼容IE */
+} 
+#qualUpload_popup .btn_addPic{
+	display: block;
+	position: relative;
+	width: 140px;
+	height: 39px;
+	overflow: hidden;
+	border: 1px solid #EBEBEB;
+	background: none repeat scroll 0 0 #21a27a;
+	color: #FFF;
+	cursor: pointer;
+	text-align: center;
+	text-decoration:none;
+}
+#qualUpload_popup .btn_addPic span{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 39px;
+	line-height: 39px;
+	background-color:#21a27a !important
+	overflow: hidden;
+	color: #FFF;
+	vertical-align: middle;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.imp-sign{
+	color:red;
+	padding-right: 10px;
+}
+
+.details_form li div input {
+	float: left;
+	padding: 0 5px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	position: relative;
+	background-color: #fff;
+}
+
+.details_form li input.radio {
+	float: left; 
+	margin: 9px 0 0; 
+	width: 14px; 
+	height: 14px; 
+	line-height: 0; 
+	padding: 0;
+}
+
+.details_form li .text {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 40px 0 5px;
+}

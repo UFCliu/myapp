@@ -1,0 +1,73 @@
+/*下拉表单*/
+.delivery .delivery_form li select{ border:none;width: 200px; height:32px;}
+.delivery .delivery_form .select_box{float: left;font-size:12px;width: 220px; height:32px;border: 1px solid #ccc; display:block; line-height:30px; *background:#fff; }
+
+.delivery .delivery_btn { margin: 5px 0 0; height: 84px; }
+.delivery .delivery_btn li { float: left; margin: 10px 0 0; width: 33.33%; height: 32px; }
+.delivery .delivery_btn li a { margin:2px;*padding-left:43px; *width:40px }
+
+.delivery_history { margin: 5px 15px 0; border: 1px solid #ddd; border-radius: 5px; background-color: #fff; position: relative; }
+.m_t_15 { margin-top: 15px; }
+.delivery_history .table_list { margin: 0; border-left: 0; }
+.delivery_history .table_list table{border:none;}
+.delivery_history .table_list th { padding: 0 10px; border: none; background-color: #e1e1e1; hieght: 38px; line-height: 38px; color: #000; font-weight: normal; text-align: left; overflow:hidden; white-space: nowrap;text-overflow:ellipsis;}
+.delivery_history .table_list td { border-right: 1px solid #ddd; border-top: 1px solid #ddd; border-bottom: 0; }
+.delivery_history .table_list .end { border-right: 0; }
+
+.select_down dt{float:left;position:relative;width:43%;padding:0 5px;display:inline; margin-right:10px; border: none;}
+.trading_form.select_down dt{float:none;display:inline-block;zoom:1;}
+.trading_form.select_down dt{*display:inline;}
+.select_down h3{width:100%; height: 30px;margin:0 0 0 -5px; padding:0 5px;border: 1px solid #ccc;font-size:12px;font-weight: normal;background-color: #fff;  line-height: 30px;text-align:left;}
+.select_down h4{display:none;position: absolute;top: 31px;left: 0;width:100%;margin:0;padding:0;border: 1px solid #e5e5e5;background:#fbfbfb; z-index: 1;font-size:12px; }
+.select_down li.zindex3 dt{z-index:3;}
+.select_down li.zindex2 dt{z-index:2;}
+.select_down li.zindex1 dt{z-index:1;}
+.trading_form.select_down h4{width:260px;padding:0;}
+.select_down h4 em{display:block;width:100%;font-weight:normal;text-indent:5px; color: #666 !important;}
+*html .select_down h4 em{width:250px;padding:0 5px;z-index:10;text-indent:0;}
+*+html .select_down h4 em{width:250px;padding:0 5px;z-index:10;text-indent:0;}
+.search_bar .condition  .select_down h4 em{display:block;margin:0;width:inherit;float:none;height:22px;line-height: 22px;cursor:pointer;padding:0 5px;text-indent:0;text-align:left;font-weight:normal; }
+.search_bar .select_down h3{padding:0 5px;height:33px;}
+.search_bar .select_down h4{width:100%;top:34px;}
+.search_bar .select_down h4 em{display:block;margin:0;width:100%;float:none;height:22px;line-height: 22px;cursor:pointer;padding:0 !important;padding:0 5px;text-indent:5px !important;text-indent:0;text-align:left;font-weight:normal; }
+
+.select_down h4 em.hover{background:#f2f2f2 !important;}
+.select_down dt a{background:url(../images/jiantou_03.png) no-repeat center center #fff !important; border: 1px #fff;position:absolute !important;width:26px;height:28px;top:2px;*top:1px;right:2px !important;*right:10px; }
+.delivery { margin: 15px 15px 0; border: 1px solid #ddd; background-color: #fff; position: relative; overflow:hidden;
+-moz-border-radius: 3px; /* Firefox */ 
+-webkit-border-radius: 3px; /* Safari Chrome */ 
+*border-radius: 2px; /* Opera 10.5+,  Internet Explorer 6+  IE-CSS3 */ 
+behavior:url(css/ie-css3.htc); /* 对IE-CSS3的引用 */ 
+}
+.delivery a{ float:left;}
+.delivery .order_info { padding: 0 15px; height: 38px; background-color: #e1e1e1; *font-size:12px; }
+.delivery .order_info span { float: left; width: 25%;  *margin-left:-3px;
+height: 38px; line-height: 38px; color: #000; text-align: left; }
+.delivery .table_list { margin: 0; border-left: 0; }
+.delivery .table_list table{border:none;}
+.delivery .table_list th { height: 38px; line-height: 38px; background-color: #f2f2f2; border-right: 1px solid #ddd; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.delivery .table_list td { height: 38px; line-height: 38px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.delivery .table_list .end { border-right: 0; }
+.delivery .table_list input { float: left; padding: 0 5px; width: 80%; height: 18px; line-height: 18px; border: 1px solid #ccc; }
+.delivery .delivery_form { margin:0; padding:0; width:100%; height: 132px;}
+.delivery .delivery_form li { float: left; margin: 10px 0 0; width: 33.3%; height: 32px;position:relative; }
+.delivery .delivery_form li div.my-form-error-class{top:-23px;left:50%;}
+.delivery .delivery_form li label { float: left; width: 28%; height: 32px; line-height: 32px; text-align: right; color:#545454;}
+.delivery .delivery_form li label em { padding-right: 10px; color: #f00; line-height: 32px; }
+.delivery .delivery_form li input { float: left;width: 50%; height: 30px; line-height: 30px; border: 1px solid #ccc; background-color: #fff;
+-moz-border-radius: 3px; /* Firefox */ 
+-webkit-border-radius: 3px; /* Safari Chrome */ 
+border-radius: 3px; /* Opera 10.5+,  Internet Explorer 6+  IE-CSS3 */ 
+behavior:url(css/ie-css3.htc); /* 对IE-CSS3的引用 */ 
+}
+.delivery .table_list table thead tr th:hover{background-color:#fff !important;}
+
+.button_toolbar_bottom .sc .button_file_deal{display: inline-block;
+  
+  width: 100px;
+  height: 32px !important;
+  line-height: 32px;
+  border-radius: 2px;
+  background-color: #21a27a;
+  text-align: center;
+  color: #fff;}

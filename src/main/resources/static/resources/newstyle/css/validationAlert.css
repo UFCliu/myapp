@@ -1,0 +1,13 @@
+input.error, select.error { border-color: #ffa9ad!important;}
+div.message {  height:25px; line-height:25px; text-align: center; z-index: 1000; width: 185px; margin:4px 0 0px 1%;}
+div.message:before { content: ' '; position:absolute; top: 100%;left:45%; border-color: #ffc9c3 transparent transparent transparent; border-style: solid; border-width: 10px; width: 0; height: 0;}
+div.message:after { content: ' '; position: absolute; top: 100%; left:45%; border-color: #ffc9c3 transparent transparent transparent; border-style: solid; border-width: 10px; width: 0; height: 0; }
+div.message02 {  height:25px; line-height:25px; text-align: center; z-index: 1000; width: 185px; margin:20px 0 0 6%;}
+div.message02:before { content: ' '; position:absolute; top: 100%;left:45%; border-color: #ffc9c3 transparent transparent transparent; border-style: solid; border-width: 10px; width: 0; height: 0;}
+div.message02:after { content: ' '; position: absolute; top: 100%; left:45%; border-color: #ffc9c3 transparent transparent transparent; border-style: solid; border-width: 10px; width: 0; height: 0; }
+div.message03 { background-color: #ffe1d1; border:1px solid #ffc9c3; height:25px; line-height:25px; text-align: center; z-index: 1000; width: 185px; margin:15px 0 0 0;}
+div.message03:before { content: ' '; position:absolute; top: 100%;left:45%; border-color: #ffc9c3 transparent transparent transparent; border-style: solid; border-width: 10px; width: 0; height: 0;}
+div.message03:after { content: ' '; position: absolute; top: 100%; left:45%; border-color: #ffc9c3 transparent transparent transparent; border-style: solid; border-width: 10px; width: 0; height: 0; }
+div.error { border-color: #924949; border-style: solid solid solid none; border-width: 2px; padding: 5px;  }
+
+.v_m{margin:55px 0 100px 17.7%;}

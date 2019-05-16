@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.liugq.mapper.InsuranceMapper">
+
+	<resultMap id="insuranceResult" type="com.example.liugq.bean.daily.Insurance">
+		<result property="id" column="id" />	
+		<result property="pay_date" column="pay_date" />	
+		<result property="base" column="base" />	
+		<result property="yanglao_company" column="yanglao_company" />
+		<result property="yanglao_self" column="yanglao_self" />	
+		<result property="yanglao_confirm" column="yanglao_confirm" />	
+		
+		<result property="yiliao_company" column="yiliao_company" />	
+		<result property="yiliao_self" column="yiliao_self" />	
+		<result property="yiliao_confirm" column="yiliao_confirm" />	
+		
+		<result property="shiye_company" column="shiye_company" />	
+		<result property="shiye_self" column="shiye_self" />	
+		<result property="shiye_confirm" column="shiye_confirm" />	
+		
+		<result property="gongshang_company" column="gongshang_company" />	
+		<result property="gongshang_confirm" column="gongshang_confirm" />	
+		
+		<result property="shengyu_company" column="shengyu_company" />	
+		<result property="shengyu_confirm" column="shengyu_confirm" />	
+		
+		<result property="company" column="company" />	
+	</resultMap>
+	
+	<resultMap id="summaryResult" type="com.example.liugq.bean.daily.Summary">
+		<result property="beginDate" column="beginDate" />	
+		<result property="endDate" column="endDate" />	
+		<result property="months" column="months" />	
+	</resultMap>
+  	<select id="getHeroById" resultType="com.example.liugq.bean.daily.Insurance">
+   		select * from hero where id = #{id}
+  	</select>
+  
+  	<select id="getAll" resultMap="insuranceResult">
+    	select * from insurance ORDER BY pay_date 
+  	</select>
+  
+  
+  	<select id="summary" resultMap="summaryResult">
+    	select max(pay_date) endDate,min(pay_date) beginDate,
+			(select count(1) from insurance where yanglao_company is not null) months
+ 		from insurance 
+  	</select>
+  
+	<select id="getById" parameterType="Integer" resultMap="insuranceResult">
+    	select * from insurance where id = #{id}
+	</select>
+  	
+  	<insert id="insert" parameterType="com.example.liugq.bean.daily.Insurance" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+	<![CDATA[
+		insert into insurance(pay_date,base,yanglao_company,yanglao_self,yanglao_confirm,yiliao_company,yiliao_self,yiliao_confirm,shiye_company,shiye_self,shiye_confirm,gongshang_company,gongshang_confirm,shengyu_company,shengyu_confirm,company)
+		values(#{pay_date},#{base},#{yanglao_company},#{yanglao_self},#{yanglao_confirm},
+		#{yiliao_company},#{yiliao_self},#{yiliao_confirm},
+		#{shiye_company},#{shiye_self},#{shiye_confirm},
+		#{gongshang_company},#{gongshang_confirm},
+		#{shengyu_company},#{shengyu_confirm},
+		#{company}) 
+	]]>
+	</insert>
+	
+	<update id="update" parameterType="com.example.liugq.bean.daily.Insurance">
+		update insurance set id= #{id} 
+				,pay_date= #{pay_date} 
+				,base= #{base} 
+				,yanglao_company= #{yanglao_company} 
+				,yanglao_self= #{yanglao_self} 
+				,yanglao_confirm= #{yanglao_confirm} 
+				,yiliao_company= #{yiliao_company} 
+				,yiliao_self= #{yiliao_self} 
+				,yiliao_confirm= #{yiliao_confirm} 
+				,shiye_company= #{shiye_company} 
+				,shiye_self= #{shiye_self} 
+				,shiye_confirm= #{shiye_confirm} 
+				,gongshang_company= #{gongshang_company} 
+				,gongshang_confirm= #{gongshang_confirm} 
+				,shengyu_company= #{shengyu_company} 
+				,shengyu_confirm= #{shengyu_confirm} 
+				,company= #{company} 
+		where id = #{id}
+	</update>
+	
+	<update id="update2" parameterType="com.example.liugq.bean.daily.Insurance">
+		update insurance set id= #{id} 
+			 <if test="pay_date !=null">
+				,pay_date= #{pay_date} 
+			 </if>
+			 <if test="base !=null">
+				,base= #{base} 
+			 </if>
+			 <if test="yanglao_company !=null">
+				,yanglao_company= #{yanglao_company} 
+			 </if>
+			 <if test="yanglao_self !=null">
+				,yanglao_self= #{yanglao_self} 
+			 </if>
+			 <if test="yanglao_confirm !=null">
+				,yanglao_confirm= #{yanglao_confirm} 
+			 </if>
+			 <if test="yiliao_company !=null">
+				,yiliao_company= #{yiliao_company} 
+			 </if>
+			 <if test="yiliao_self !=null">
+				,yiliao_self= #{yiliao_self} 
+			 </if>
+			 <if test="yiliao_confirm !=null">
+				,yiliao_confirm= #{yiliao_confirm} 
+			 </if>
+			 <if test="shiye_company !=null">
+				,shiye_company= #{shiye_company} 
+			 </if>
+			 <if test="shiye_self !=null">
+				,shiye_self= #{shiye_self} 
+			 </if>
+			 <if test="shiye_confirm !=null">
+				,shiye_confirm= #{shiye_confirm} 
+			 </if>
+			 <if test="gongshang_company !=null">
+				,gongshang_company= #{gongshang_company} 
+			 </if>
+			 <if test="gongshang_confirm !=null">
+				,gongshang_confirm= #{gongshang_confirm} 
+			 </if>
+			 <if test="shengyu_company !=null">
+				,shengyu_company= #{shengyu_company} 
+			 </if>
+			 <if test="shengyu_confirm !=null">
+				,shengyu_confirm= #{shengyu_confirm} 
+			 </if>
+			 <if test="company !=null">
+				,company= #{company} 
+			 </if>
+		where id = #{id}
+	</update>
+	
+	<delete id="delete" parameterType="Integer">
+    <![CDATA[
+        delete from insurance where id = #{id}
+    ]]>
+    </delete>
+  	
+</mapper>

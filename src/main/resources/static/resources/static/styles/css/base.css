@@ -1,0 +1,500 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+}
+*html{  
+    background-image:url(about:blank);
+    background-attachment:fixed;
+}
+body {
+	width:100%;
+	height:100%;
+	font: 12px 'microsoft yahei', 'simsun';
+	background-color: #f5f5f5;
+	color: #545454;
+	min-width: 1200px;
+	*text-align: center;
+}
+
+ul, li, ol {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	font-weight: normal;
+	font-size: 100%;
+}
+
+u, em, i {
+	font-style: normal;
+	text-decoration: none;
+}
+
+input, textarea, select {
+	resize: none;
+	background: #fff;
+	color: #545454;
+}
+ input[type=button]{
+ 	cursor:pointer;
+ }
+
+a, a:visited {
+	font-size: 12px;
+	color: #545454;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: #396;
+}
+.clear{
+	clear:both;
+}
+
+/*  --header--  */
+.header {
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+
+.header .inner {
+	margin: 0 auto;
+	width: 1200px;
+	height: 107px;
+	position: relative;
+}
+
+.header .inner .logo {
+	margin: 29px 0 0;
+}
+
+.header .inner .logo a, .header .inner .logo {
+	float: left;
+	width:295px;
+	height:49px;
+}
+
+.header .inner .logo a {
+	background: url(0813-logo4.png) 0 0 no-repeat;
+	text-indent: -10000px;
+}
+
+
+.header .inner .top_text {
+	float: right;
+	_width: 200px;
+	_overflow: visibility;
+	_white-space: nowrap;
+	margin: 35px 0 0;
+	height: 41px;
+}
+
+.header .inner .top_text .hotline {
+	padding: 0 0 0 35px;
+	height: 21px;
+	line-height: 21px;
+	color: #396;
+	background: url(../images/icon_cs.png) 0 center no-repeat;
+	_background: url(../images/icon_cs.gif) 0 center no-repeat;
+}
+
+.header .inner .top_text .hotline strong {
+	color: #ff9432;
+	font-size: 14px;
+}
+
+.header .inner .top_text .certificate {
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	text-align: right;
+}
+
+.header .inner .headertitl_3 {
+	float: left;
+	_display: inline;
+	margin: 26px 0 0 20px;
+	height: 55px;
+	color: #000;
+	font: 22px/55px bold "Microsoft Yahei";
+}
+
+.header .inner .payinfo_lr {
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	width: 300px;
+	padding: 0 0 0 40px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #666666;
+	background: url(../images/2015011606.jpg) left center no-repeat;
+	text-align: left;
+}
+
+.header .inner .payinfo_lr em {
+	font: bold 24px/24px "Microsoft Yahei";
+	color: #339966;
+}
+
+
+/*  --main--  */
+.main {
+	margin: 0 auto;
+	width: 1200px;
+	position: relative;
+	z-index: 0;
+}
+
+.main_box {
+	background-color: #fff;
+}
+
+
+/*  --弹出层--  */
+/*popup_profile*/
+.popup_profile {
+	position: fixed;
+	_position:absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	_top:expression(eval(document.documentElement.scrollTop));
+	_bottom:auto;
+	display: none;
+	z-index: 99999998;
+}
+.popup_profile .bg {
+	position: absolute;
+	z-index: 99999999;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	opacity: 0.5;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	background-color: #000;
+}
+.popup_profile .box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 718px;
+	height: 448px;
+	margin: -225px 0 0 -360px;
+	padding:0 20px 20px;
+	background-color: #fff;
+	border: solid 2px #d1d1d1;
+	z-index: 100000000;
+	*text-align:left;
+}
+.popup_profile .tit {
+	height: 40px;
+	border-bottom:2px solid #ebebeb;
+	font: 12px/30px "Microsoft Yahei";
+}
+.popup_profile .tit .text{
+	float:left;
+	margin-bottom:-2px;
+	padding:0 10px;
+	height:40px;
+	line-height:40px;
+	position:relative;
+	border-bottom:2px solid #396;
+	font-size:16px;
+	color:#396;
+	letter-spacing: 2px;
+}
+.popup_profile .tit a.close {
+	margin:10px 5px 0 0;
+	float: right;
+	width:20px;
+	height:20px;
+	background:url(../images/btn_close.gif) center no-repeat;
+	text-indent:-10000px;
+}
+.popup_profile .cnt {
+	margin:20px 0 0;
+}
+.popup_profile .cnt .popup_form{
+}
+.popup_profile .cnt .popup_form li{
+	clear:both;
+	margin:10px 0 0;
+	min-height:28px;
+	vertical-align:top;
+}
+.popup_profile .cnt .popup_form li label{
+	float:left;
+	padding:5px 0;
+	width:100px;
+	line-height:18px;
+	text-align:right;
+	position:relative;
+	z-index:1;
+}
+.popup_profile .cnt .popup_form li label em{
+	color:#f00;
+	padding-right:5px;
+}
+.popup_profile .cnt .popup_form li .dom_box{
+	margin-left:100px;
+	position:relative;
+	z-index:0;
+	_margin-top:-16px;
+}
+/*  --弹出层--  */
+/*popup_profile*/
+.popup_profile {
+	position: fixed;
+	_position:absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	_top:expression(eval(document.documentElement.scrollTop));
+	_bottom:auto;
+	display: none;
+	z-index: 99999998;
+}
+.popup_profile .bg {
+	position: absolute;
+	z-index: 99999999;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	opacity: 0.5;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	background-color: #000;
+}
+.popup_profile .box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 718px;
+	height: 448px;
+	margin: -225px 0 0 -360px;
+	padding:0 20px 20px;
+	background-color: #fff;
+	border: solid 2px #d1d1d1;
+	z-index: 100000000;
+	*text-align:left;
+}
+.popup_profile .tit {
+	height: 40px;
+	border-bottom:2px solid #ebebeb;
+	font: 12px/30px "Microsoft Yahei";
+}
+.popup_profile .tit .text{
+	float:left;
+	margin-bottom:-2px;
+	padding:0 10px;
+	height:40px;
+	line-height:40px;
+	position:relative;
+	border-bottom:2px solid #396;
+	font-size:16px;
+	color:#396;
+	letter-spacing: 2px;
+}
+.popup_profile .tit a.close {
+	margin:10px 5px 0 0;
+	float: right;
+	width:20px;
+	height:20px;
+	background:url(../images/btn_close.gif) center no-repeat;
+	text-indent:-10000px;
+}
+.popup_profile .cnt {
+	margin:20px 0 0;
+}
+.popup_profile .cnt .popup_form{
+}
+.popup_profile .cnt .popup_form li{
+	clear:both;
+	margin:10px 0 0;
+	min-height:28px;
+	vertical-align:top;
+}
+.popup_profile .cnt .popup_form li label{
+	float:left;
+	padding:5px 0;
+	width:100px;
+	line-height:18px;
+	text-align:right;
+	position:relative;
+	z-index:1;
+}
+.popup_profile .cnt .popup_form li label em{
+	color:#f00;
+	padding-right:5px;
+}
+.popup_profile .cnt .popup_form li .dom_box{
+	margin-left:100px;
+	position:relative;
+	z-index:0;
+	_margin-top:-16px;
+}
+.popup_profile .cnt .popup_form li .input_text{
+	float:left;
+	padding:0 5px !important;
+	width:70% !important;
+	height:26px !important;
+	line-height:26px !important;
+	border:1px solid #ddd;
+}
+.popup_profile .cnt .popup_form li select{
+	float:left;
+	min-width:50px;
+	height:28px;
+	line-height:28px;
+	border:1px solid #ddd;
+}
+.popup_profile .cnt .popup_form li textarea{
+	float:left;
+	padding:5px 0 5px 5px;
+	width:90% !important;
+	height:100px;
+	line-height:18px;
+	border:1px solid #ddd;
+	white-space:normal !important;
+}
+.popup_profile .cnt .popup_form li .text{
+	float:left;
+	width:auto;
+	padding:5px 0 5px 10px;
+	line-height:18px;
+	white-space: nowrap;
+}
+.popup_profile .cnt .popup_form li label.error{
+	float:left;
+	width:auto;
+	padding:5px 0 5px 10px;
+	color:#f00;
+	line-height:18px;
+	white-space: nowrap;
+}
+.popup_profile .cnt .popup_form li .checkbox_box{
+	padding:7px 0px;
+	height:14px;
+	width:auto;
+}
+.popup_profile .cnt .popup_form li .checkbox_box input{
+	float:left;
+	width:14px;
+	height:14px;
+}
+.popup_profile .cnt .popup_form li .checkbox_box span{
+	float:left;
+	padding-left:5px;
+	height:14px;
+	font: 12px/14px;
+	text-align:left;
+}
+.popup_profile .button_toolbar{
+	margin:20px 0 0;
+	height:28px;
+	text-align:right;
+}
+.popup_profile .button_toolbar input{
+	float:none !important;
+	display:inline-block;
+	*zoom:1;
+	*display:inline;
+	margin:0 0 0 20px;
+	width:60px;
+	height:28px;
+	line-height:28px;
+	color:#fff;
+	border:none;
+	background-color:#396;
+}
+
+.popup_profile .cnt p {
+	font: 12px/48px "Microsoft Yahei";
+	height: 48px;
+	color: #f00;
+}
+.popup_profile .cnt dl {
+	height: 24px;
+	padding: 8px 0;
+}
+
+.popup_profile .cnt dt {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.popup_profile .cnt dt span {
+	color: #f00;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.popup_profile .cnt dd {
+	margin-left: 100px;
+	color: #454545;
+}
+
+.popup_profile .cnt dd select {
+	height: 22px;
+	border: solid 1px #ddd;
+	width: 120px;
+}
+
+.popup_profile .cnt dd input {
+	height: 22px;
+	border: solid 1px #ddd;
+}
+
+.popup_profile .cnt dd input.addr {
+	width: 400px;
+}
+
+.popup_profile .cnt dd input.zipcode {
+	width: 100px;
+}
+
+.popup_profile .cnt dd input.name {
+	width: 160px;
+}
+
+.popup_profile .cnt dd input.phone {
+	width: 180px;
+}
+
+.popup_profile .cnt dd input.tel {
+	width: 180px;
+}
+
+.popup_profile .cnt dd label input {
+	float: left;
+	width: 14px;
+	height: 14px;
+	margin: 5px;
+}
+
+.popup_profile .cnt dd input.btn {
+	height: 36px;
+	width: 120px;
+	font: 16px/36px "Microsoft Yahei";
+	color: #fff;
+	border: none;
+	background-color: #396;
+	cursor: pointer;
+}

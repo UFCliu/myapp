@@ -1,0 +1,19 @@
+/*  --步骤 start--  */
+.step { height: 40px; margin: 15px 15px 0;  *zoom:1;}
+.step li { float: left; width: 25%;  *width:24.9%;
+height: 40px; text-align: center; vertical-align: top; background: url(../images/step_bar_bg.png) no-repeat 100% 0 #dddddd; _background: url(../images/step_bar_bg.gif) no-repeat 100% 0 #dddddd; }
+.step li span { display: inline-block;height: 40px; line-height: 40px; font-size: 15px; color: #666;   vertical-align: middle; }
+*+html .step li span { top: -4px;}
+.step li .em { display: inline-block;  font-family:  Helvetica, sans-serif !important;
+height: 40px; line-height: 40px; padding-right: 15px; font-size: 25px; font-style:normal;}
+.step li.first { border-radius: 2px 0 0 2px; }
+.step li.done { background-position: 100% -80px; background-color: #5cb85c; color: #fff; }
+.step li.done em, .step li.done span { color: #fff; }
+.step li.current_prev { background-position: 100% -40px; background-color: #5cb85c; color: #fff; }
+.step li.current_prev em, .step li.current_prev span { color: #fff; }
+.step li.current { background-color: #f0ad4e; color: #fff; }
+.step li.current em, .step li.current span { color: #fff; }
+.step li.current_over {background-color: #f0ad4e; border:none !important; background-image:none !important;}
+.step li.current_over em, .step li.current_over span { color: #fff !important; }
+.step li.last { background-image: none; border-radius: 0 2px 2px 0; }
+/*  --步骤 end--  */

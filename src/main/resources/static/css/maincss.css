@@ -1,0 +1,224 @@
+body{ width:100%; height: 100%; font-size: 14px; margin: 0; padding: 0; /* background:#e7e7e7; */ color:#333;  font-family: "寰蒋闆呴粦";}
+.key_add{ color: #EC6941;}
+.key_dec{ color: #3a8141;}
+.key_con{ color:#00A2DE;}
+ul,li{ margin: 0; padding: 0; list-style: none;}
+.box_top{ height: 61px; background-color: #fff; width:1120px; margin:0 auto;}
+.top_logo{ width:1120px; height: 61px; margin: 0 auto; border-bottom:1px solid #00b6ef;  background: url(../images/nanj/main_03.png) no-repeat left top; position: relative;}
+.logo_name{ font-size:15px; color: #47b8e9; position: absolute; left:178px; top: 21px;}
+.main_nav{ font-size: 18px; color: #333333; text-align: center; height:61px; line-height: 61px; position: absolute;left:360px;top: 0;}
+.main_nav li{ width:128px; border-right:1px solid #f0ede9; float: left; }
+.main_nav li a{ color:#333; text-decoration: none}
+.firstnav{ border-left:1px solid #F0EDE9}
+.cur_nav{ background:#00b6ef; color:#fff; margin-bottom:1px; position:relative; }
+.cur_nav_mg{width:16px; height:13px; background: url(../images/nanj/main_06.png) no-repeat bottom center; position:absolute; bottom:-1px; left:57px; display:inline-block; }
+.top_change{ position: absolute; right:10px; top: 20px; font-size:12px; color:#333;}
+.top_change a{text-decoration: none !important; }
+.top_change span{ font-size: 14px; color: #00b6ef; }
+.top_news{ width:1120px;margin:0 auto; height: 53px; border-top:1px solid #fff; background: url(../images/nanj/main_bg_03.png) repeat-x 0px 0;}
+.news_info{ width:1120px; height:52px; line-height: 52px;  margin: 0 auto; color: #333; background: url(../images/nanj/main_11.png) no-repeat 18px;}
+.news_info h3{ font-size:14px; font-weight: normal; padding-left: 95px; margin: 0; }
+.box_content{ width:1120px; height:100%; background:#fff; margin: 0 auto; position: relative;}
+.content_left{ width:280px; position: absolute; left:0; /* border-left:1px solid #d2d2d2; border-right:1px solid #d2d2d2; background: #f7f5f1;  */}
+.info_title{ height: 51px; color: #00a2de; font-size:16px; font-weight: bold; margin: 0; border-bottom:1px solid #D2D2D2}
+.icon_info{height: 51px; line-height: 52px; padding-left:60px; display:inline-block; background: url(../images/nanj/main_15.png) no-repeat 20px 14px; margin-right:8px; }
+.but_update{ height:22px; background:#fff; font-size:12px; color:#559be1; border:1px solid #559be1; width:3em; margin-left:65px; padding:2px 5px; }
+.info_box {  line-height: 30px;  background:url(../images/nanj/main_bg_06.png) repeat-x top left #dbf6ff; border:1px solid #6ccdeb; border-radius:3px; margin:0 0px 12px 0;}
+.info_box li{ margin-left:15px; margin-right:15px;}
+.info_box li span{color:#0092ef; font-weight: normal; margin-left:5px;}
+.first_li{ padding-top:10px; line-height:30px;}
+.last_li{ text-align: center; margin-bottom:10px;}
+.dot_more{ width:13px; height:13px; display: inline-block; background:url(../images/nanj/dot_more.png) no-repeat center;}
+.but_comm{ height: 30px; line-height: 30px; text-align: center; background:url(../images/nanj/dot_shebaoka.png) no-repeat; color: #ea6542; border:0; cursor: pointer;padding-left:10px; padding-right:10px; margin-right:10px;}
+.but_orangey{ background:#ec6941;}
+.but_sbk{ height: 30px;  line-height: 24px; font-size:14px; text-align: center; background:url(../images/nanj/dot_shebaoka.png) no-repeat 0; color: #ea6542; border:0; cursor: pointer;padding-left:28px;  }
+.but_yellow{ background:#f7b551}
+.but_blue{ background:#00b8db}
+.view_box{ height:40px; line-height: 43px;  font-size:14px; color:#333; border-bottom:1px  solid #D2D2D2; padding-bottom:0px;}
+.view_box ul { position: relative;}
+.view_blank{ width:2px !important; color:#6ccdeb !important; font-size:14px; position:absolute; right:0px;}
+.view_box ul li{ float:left; width:138px; position:relative; text-align:center; cursor: pointer; background:#ecfaff; border-bottom:1px solid #6ccdeb}
+.view_box ul p{
+	position: absolute;
+    top: 26px;
+    left: 0px;
+    width: 138px;
+    height: 12px;
+    background: url(../images/nanj/cur_tab.png) center top no-repeat; 
+    overflow: hidden;
+    text-align: center;}
+.tab_on{color:#0097d6; }
+.product{ position: relative;  display: none; margin-top: 10px;}
+.product ul{  left: 0px;}
+.product-wrap{ }
+.product-wrap .show{ display: block;}
+.list_title{ font-size:14px; color:#333; font-weight: normal; height:26px; line-height: 26px; margin:0; padding:0; padding-left:20px; display:block; }
+.list_detail{ /* width:100%;  */font-size:12px;}
+.list_detail li{ margin:0 0 8px 0px ; border-bottom: 1px dashed #ccc;}
+.list_detail p{ margin:5px 60px; padding:0; /* line-height: 16px; */ position: relative;}
+.detail_time{ padding-left:15px !important; border-bottom:1px solid #ccc; font-weight: bold; line-height: 24px;}
+.out_ylbx,.in_ylbx,.in_yanl,.in_shiy{width: 30px; height: 30px; background-image:url(../images/nanj/detail_bg.png) ; background-repeat: no-repeat; float:left; margin-right:10px !important; margin-left:20px !important;}
+.out_ylbx{ background-position:0 0px ;}
+.in_yanl{ background-position: -30px 0;}
+.in_ylbx{background-position:-60px 0px ;}
+.in_shiy{ background-position: -90px 0;}
+.detail_sum{ position: absolute; right: 20px; font-weight: bold;}
+.detail_unit{ position:absolute; right: 5px; font-size:10px; font-weight: normal;}
+.list_detail li p.quanyi_title,.list_detail li p.quanyi_list1{ width:210px; float:right; margin:3px 0; }
+.quanyi_yanl,.quanyi_ylbx,.quanyi_shiy,.quanyi_gongs,.quanyi_shengy,.quanyi_wux,.quanyi_jiaofei,.quanyi_qiank,.quanyi_jies,.quanyi_biaoz{width: 36px; height: 36px; background-image: url(../images/nanj/quany_bg.png); background-repeat: no-repeat; float:left; margin-right:10px !important; margin-left:20px !important;}
+.quanyi_yanl{ background-position: 0 0;}/*鏉冪泭鎽樿閲岀殑鍏昏��*/
+.quanyi_ylbx{ background-position:-37px 0;}/*鏉冪泭鎽樿閲岀殑鍖荤枟淇濋櫓*/
+.quanyi_shiy{ background-position: -73px 0;}/*鏉冪泭鎽樿閲岀殑澶变笟淇濋櫓*/
+.quanyi_gongs{ background-position:-109px 0;}/*鏉冪泭鎽樿閲岀殑宸ヤ激淇濋櫓*/
+.quanyi_shengy{ background-position:-145px 0;}/*鏉冪泭鎽樿閲岀殑鐢熻偛淇濋櫓*/
+.quanyi_wux{ background-position:-181px 0;}/*鏉冪泭鎽樿閲岀殑浜旈櫓*/
+.quanyi_jiaofei{ background-position:-217px 0;}/*鏉冪泭鎽樿閲岀殑缂磋垂淇℃伅*/
+.quanyi_qiank{background-position:-253px 0}/*鏉冪泭鎽樿閲岀殑寰佺即娆犳*/
+.quanyi_jies{background-position:0 -38px}/*鏉冪泭鎽樿閲岀殑寰佺即缁撶畻*/
+.quanyi_biaoz{background-position:-37px -38px}/*鏉冪泭鎽樿閲岀殑寰呴亣鏍囧噯*/
+.quanyi_title{ font-weight: bold; font-size:14px; color: #666;}
+/*鍙宠竟鍐呭鏍峰紡寮�濮�*/
+.content_right{ background:#fff;  width:840px; position: absolute; left:280px;}
+.per_info{ height: 60px; padding-left:20px;}
+.per_info li{ float: left; color:#a9a9a9; line-height: 20px;}
+.per_info li p{ margin: 0;}
+.dot_per{ height:45px; color:#333 !important; background: url(../images/nanj/dot_person.png) no-repeat left center; display: inline-block; padding-left:58px; line-height: 45px;}
+.dot_per a{ color:#00A2DE; width:8em; display:inline-block;/*  padding-left:85px;  */text-decoration: none; text-align:right;}
+.per_buts{ height:52px; padding-top:23px; margin-left:150px;}
+/*棣栭〉鍙宠竟鐨勬ā鍧楁牱寮�*/
+ul.main_block{ margin-left:3px; margin-top:1px; clear:both; width:900px;}
+.main_block li{ width:264px; height: 200px; color:#666;  border:1px solid #6ccdeb; margin:0px 7px 20px 8px; float: left; position:relative;}
+.main_block li p b{ display: inline-block; position: absolute; top:5px; left:54px; font-weight:normal; }
+.main_block li p b a{ text-decoration: none; color:#666;}
+.block_title{ height: 30px; line-height:30px; border-bottom:1px solid #6ccdeb; background:#ecfaff;  padding: 6px 10px; position: relative; }
+.block_list {width:258px; height:153px; border:0;  }
+ul.block_list li{width:200px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; height: 13px; line-height:13px; margin:10px 15px 3px 15px; 
+padding-left:20px; border:0; color: #00A2DE;  background:url(../images/nanj/dot_square.png) no-repeat 0px 2px;  }
+.block_list li a{ color: #333; text-decoration: none;}
+.block_list li a:hover{ color:#00B6EF ; text-decoration: underline !important;}/*妯″潡鍥炬爣鏍峰紡*/
+.block_yanlao,.block_yiliao,.block_gongshang,.block_shengyu,.block_shiye,.block_zhengjiao,.block_peixun,.block_jiuye,.block_jiancha,.block_jiaoyu,.block_shebaokfuwu,.block_jiangcheng,.block_junzhuangan,.block_jineng,.block_xuexiwang{
+	width:30px; height: 30px;  background-image:url(../images/nanj/bg_block.png); display: inline-block;
+	}
+.block_yanlao{ background-position: 0px 0px;  }/*鍏昏�佷繚闄╁浘鏍囨牱寮�*/
+.block_yiliao{ background-position: -31px 0px;}/*鍖荤枟淇濋櫓鍥炬爣鏍峰紡*/
+.block_gongshang{ background-position: -63px 0px;}/*宸ヤ激淇濋櫓鍥炬爣鏍峰紡*/
+.block_shengyu{background-position: -95px 0px;}/*鐢熻偛淇濋櫓鍥炬爣鏍峰紡*/
+.block_shiye{background-position: -126px 0px;}/*澶变笟淇濋櫓鍥炬爣鏍峰紡*/
+.block_zhengjiao{background-position: -158px 0px;}/*寰佺即涓庢潈鐩婅褰曞浘鏍囨牱寮�*/
+.block_peixun{background-position: -189px 0px;}/*鑱屼笟鍩硅鍥炬爣鏍峰紡*/
+.block_jiuye{background-position: -221px 0px;}/*鍔冲姩灏变笟鍥炬爣鏍峰紡*/
+.block_jiancha{background-position: -252px 0px;}/*鍔冲姩鐩戝療鍥炬爣鏍峰紡*/
+.block_jiaoyu{background-position: -284px 0px;}/*涓撴妧浜哄憳缁х画鏁欒偛鍥炬爣鏍峰紡*/
+.block_shebaokfuwu{background-position: -315px 0px;}/*绀句繚鍗℃湇鍔″浘鏍囨牱寮�*/
+.block_jiangcheng{background-position: -346px 0px;}/*鍏姟鍛樺鎯╁浘鏍囨牱寮�*/
+.block_junzhuangan{background-position: -378px 0px;}/*鍐涜浆骞茶嚜涓绘嫨涓氬浘鏍囨牱寮�*/
+.block_jineng{background-position: -410px 0px;}/*鑱屼笟鎶�鑳介壌瀹氬浘鏍囨牱寮�*/
+.block_xuexiwang{background-position: -441px 0px;}/*鍏姟鍛樺涔犵綉鍥炬爣鏍峰紡*/
+.block_bg{
+	position:absolute;
+	right:0; 
+	bottom:0; 
+	width:80px; 
+	height:92px; 
+	background-image:url(../images/nanj/block_bg.png);
+	background-repeat: no-repeat;
+}
+.blockbg_yanlao{ background-position:0 0;}/**浼佷笟鍏昏�佸垪琛ㄦ鍙充笅鐨勮儗鏅浘*/
+.blockbg_zhengjiao{background-position:-104px 0;}/*寰佺即涓庢潈鐩婅褰曞垪琛ㄥ彸涓嬬殑鑳屾櫙鍥�*/
+.blockbg_gongshang{ background-position:-214px 0;}/*宸ヤ激淇濋櫓鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_jiuye{ background-position:-305px 0;}/*鍔冲姩灏变笟鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_kaohe{ background-position:0 -108px;}/*鍏姟鍛樿�冩牳鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_junzhuangan{ background-position:-104px -108px;}/*鑷富鎷╀笟鍐涜浆骞插垪琛ㄥ彸涓嬬殑鑳屾櫙鍥�*/
+.blockbg_jiaoyu{ background-position:-214px -108px;}/*涓撴妧浜哄憳缁х画鏁欒偛鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_jineng{ background-position:-305px -108px;}/*鑱屼笟鎶�鑳介壌瀹氬垪琛ㄥ彸涓嬬殑鑳屾櫙鍥�*/
+.blockbg_fuwu{  background-position:0px -217px;}/*鍏叡鏈嶅姟鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_shebaoka{  background-position:-104px -217px;}/*绀句繚鍗℃湇鍔″垪琛ㄥ彸涓嬬殑鑳屾櫙鍥�*/
+.blockbg_zhengjiao{  background-position:-214px -217px;}/*寰佺即涓庢潈鐩婅褰曞垪琛ㄥ彸涓嬬殑鑳屾櫙鍥�*/
+.blockbg_shengyu{  background-position:-305px -217px;}/*鐢熻偛淇濋櫓鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_cxyanglao{  background-position:0px -325px;}/*鍩庝埂灞呮皯鍏昏�佷繚闄╁垪琛ㄥ彸涓嬬殑鑳屾櫙鍥�*/
+.blockbg_jiancha{  background-position:-104px -325px;}/*鍔冲姩鐩戝療淇濋櫓鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_jiangcheng{  background-position:-214px -325px;}/*鍏姟鍛樺鎯╁垪琛ㄥ彸涓嬬殑鑳屾櫙鍥�*/
+.blockbg_xuexiwang{  background-position:-305px -325px;}/*鍏姟鍛樺鎯╁垪琛ㄥ彸涓嬬殑鑳屾櫙鍥�*/
+.blockbg_zhigongyb{  background-position:0px -435px;}/*鑱屽伐鍖讳繚鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_juminyb{  background-position:-104px -435px;}/*灞呮皯鍖讳繚鍒楄〃鍙充笅鐨勮儗鏅浘*/
+.blockbg_shiye{  background-position:-214px -435px;}/*澶变笟淇濋櫓鍒楄〃鍙充笅鐨勮儗鏅浘*/
+
+/*瀛愰〉闈�*/
+.subpage_box{ width:1120px; margin:0 auto; background:#fff;}
+.subpage_content{ padding:0px ;  background:#fff;}
+.subpage_title{ height: 46px; line-height: 46px; font-size: 18px; color: #666; margin:0; padding-left:15px;  background: #fbfbfb; border: 1px solid #e8e8e8;}
+.subpage_box h1 span{width:27px; height:46px; background:url(../images/nanj/subpage/dot_subpage.png) no-repeat 0 10px; display:inline-block; padding-left:10px; margin-right:12px; }
+.subpage_content iframe{ overflow-x:hidden; }
+/*棣栭〉鏂板鐨勬牱寮�*/
+.dot_change{ width:34px; height:20px; background:url(../images/nanj/main.png) -260px -8px no-repeat; display:inline-block;}/*椤堕儴鍒囨崲鎸夐挳*/
+.dot_exit{ width:25px; height:25px; margin-left:18px; background:url(../images/nanj/main.png) -306px -8px no-repeat; display:inline-block;}/*椤堕儴閫�鍑烘寜閽�*/
+.dot_time{ font-size:12px; color:#afb4b6; border-bottom:1px dotted #00b6ef; }
+.button_list li{  width:138px; height:50px; margin-bottom:10px;  font-size:14px; text-align:left; line-height:50px; background:url(../images/nanj/button_list.png) no-repeat 0 0;}/*甯哥敤鎸夐挳鍖�*/
+.but_list_left{ float:left; color:#37b898;}
+.but_list_right{ float:right; color:#0097d6}
+.but_quanyi{ width:45px; height:50px; background:url(../images/nanj/button_list.png) no-repeat -155px 2px; display:inline-block; }/*鏉冪泭璁板綍鍗曟寜閽�*/
+.but_ylj{ width:45px; height:50px; background:url(../images/nanj/button_list.png) no-repeat -220px 2px; display:inline-block;}/*鍏昏�侀噾閾惰鎸夐挳*/
+.left_data_box{ border:1px solid #6ccdeb; border-radius:3px; clear:both; margin-top:10px;}
+/*鏈嶅姟澶у叏椤甸潰澧炲姞鐨勬牱寮�*/
+.per_info_box{ height:50px; line-height:50px; border:1px solid #6ccdeb; border-radius:3px; margin-bottom:10px;}
+.blank_left{ margin-left:16px; color:#00A2DE}
+.main_block_width{ width:1130px !important;}
+.main_block_width li{ width:268px; margin:0px 12px 20px 0px; }
+/*棣栭〉1.7鍖哄鍔犵殑鍥捐〃鍖虹殑鏍峰紡*/
+.chart_box{
+	 margin:0px auto ;
+}
+.chart_left{
+	width:405px; border:1px solid #f6f0ed; float: left; height: 218px; margin:0px 10px 10px 10px;padding: 0px 5px;
+}
+.chart_right{
+	width:400px; border:1px solid #f6f0ed; float: right; height: 218px; margin:0px;padding:0 5x;
+}
+/*缈婚〉 2017-05-19*/
+.com_holder {
+  	width:230px;
+  	height:23px;
+  	line-height:23px;
+  	background:url(../images/nanj/page_bg.png) no-repeat center;
+  	position: absolute;
+    margin: 0 auto;
+    bottom:12px;
+    text-align: center;
+  }
+
+.com_holder a {
+	font-size: 15px !important;
+    cursor: pointer;
+    margin: 0 3px;
+    padding:0 3px;
+    color: #333;
+    text-decoration: none;
+  }
+
+.com_holder a:hover {
+/*    background-color: #222;
+*/    color: #ff6c00;
+  }
+.com_holder a.jp-previous {width:6px; height:6px; border-radius:10px; border:1px solid #cacaca; margin-right: 15px; color:#cacaca; padding:0 2px; }
+.com_holder a.jp-next{width:6px; height:6px; border-radius:10px; border:1px solid #cacaca; margin-left:15px; color:#cacaca; padding:0 2px;  }
+.com_holder a.jp-next:hover,.com_holder a.jp-previous:hover{ color: #ff6c00; border:1px solid #ff6c00;
+}
+ a.jp-current:hover, .com_holder a.jp-current {
+    color: #ff6c00;
+    font-weight: bold;
+  }
+
+ a.jp-disabled:hover,  .com_holder a.jp-disabled {
+    color: #bbb !important;
+    border-color:#cacaca !important;
+  }
+
+ a.jp-current:hover,  .com_holder a.jp-current,
+ .com_holder a.jp-disabled,a.jp-disabled:hover {
+    cursor: default;
+    background: none;
+  }
+
+.com_holder span { margin: 0 5px; }
+.one_none{ display:none !important;}
+

@@ -1,0 +1,5 @@
+.popupDiv{border-radius:2px;background-color:#f0f0f0; width: 450px; visibility: hidden; position: absolute; z-index: 99; left: 510px; top: 661px;}
+.popupDiv .popup{padding:0 10px 5px 10px;line-height:150%;}
+.popupDiv .popup li{list-style-type:none;float:left;}
+.popupImgDiv{margin-top:10px;float:left;}
+.popupTextarea{resize:none;margin-top:-15px;}

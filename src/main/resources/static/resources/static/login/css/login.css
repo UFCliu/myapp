@@ -1,0 +1,352 @@
+*{font-family: 'microsoft yahei';}
+h1,h2,h3{font-weight:normal;}
+/*  header  */
+.header{
+	margin:0 auto;
+	width:1024px;
+	height:90px;
+}
+.header .logo{
+	float:left;
+	margin:15px 0 0;
+	width:570px;
+	height:60px;
+	background:url(../images/0813-logo2.png) 0 0 no-repeat;
+	text-indent:-10000px;
+}
+/*  main  */
+.main{
+	min-width:1024px;
+	height:440px;
+}
+.main .main_bg{
+	min-width:1024px;
+	height:440px;
+	background:url(../images/bg.jpg) center no-repeat
+}
+.main .inner{
+	margin:0 auto;
+	width:1024px;
+	height:440px;
+	position:relative;
+	z-index:0;
+}
+.main .inner .login{
+	position:absolute;
+	z-index:1;
+	top:45px;
+	right:53px;
+	padding:28px 25px;
+	width:305px;
+	height:300px;
+	background-color:#fff;
+	border:1px solid #339967;
+	border-radius:5px;
+}
+.main .inner .login h2.title{
+	height:25px;
+	line-height:25px;
+	font-size:18px;
+	color:#339967;
+}
+.main .inner .login p.error{
+	padding:10px 0 0;
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	color:#fe2d2d;
+}
+.main .inner .login .login_form{
+	height:200px;
+
+}
+.main .inner .login .login_form li{
+	float:left;
+	width:100%;
+	margin:0 0 17px;
+	position:relative;
+}
+.main .inner .login .login_form li .input_text{
+	float:left;
+	padding:0 10px;
+	width:280px;
+	height:35px;
+	line-height:35px;
+	border:1px solid #339967;
+	font-size:14px;
+	color:#999;
+	border-radius:3px;
+}
+.main .inner .login .login_form li .input_pwd{
+	float:left;
+	padding:0 30px 0 10px;
+	width:260px;
+	height:35px;
+	line-height:35px;
+	border:1px solid #339967;
+	font-size:14px;
+	/*color:#999;*/
+	border-radius:3px;
+}
+
+.main .inner .login .login_form li .hid-ms-reveal{
+	color:#000;
+}
+.main .inner .login .login_form li .keyboard{
+	display: block;
+	position:absolute;
+	top:12px;
+	left:270px;
+	width:19px;
+	height:13px;
+	background:url(../images/keyboard.png) 0 0 no-repeat;
+}
+.main .inner .login .login_form li .input_checkbox{
+	float:left;
+	margin:8px 0 0;
+	width:14px;
+	height:14px;
+}
+.main .inner .login .login_form li label{
+	float:left;
+	padding-left:5px;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#339967;
+}
+.main .inner .login .login_form li .forgot_pwd{
+	float:right;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#339967;
+}
+.main .inner .login .login_form li .input_submit{
+	float:left;
+	width:302px;
+	height:37px;
+	line-height:37px;
+	font-size:18px;
+	color:#fff;
+	border:none;
+	background-color:#fe8f2d;
+	border-radius:3px;
+    cursor: pointer;
+}
+.main .inner .login p.text{
+	padding:15px 0 0;
+	height:25px;
+	line-height:25px;
+	font-size:14px;
+	color:#339967;
+}
+.main .inner .login p.text a{
+	padding-left:10px;
+	color:#339967;
+	text-decoration:underline;
+}
+/*  footer  */
+.footer{
+	margin:0 auto;
+	width:1024px;
+	height:170px;
+}
+.footer .links{
+	padding:20px 0 0;
+	height:20px;
+	text-align:center;
+}
+.footer .links a{
+	padding:0 22px;
+	font-size:12px;
+	color:#858585;
+}
+.footer .links a:hover{text-decoration:underline;}
+.footer .copyright{
+	height:56px;
+	line-height:28px;
+	font-size:12px;
+	color:#a7a2a7;
+	text-align:center;
+}
+.footer .admission{
+	color:#9f9f9f;
+	text-align:center;
+	line-height:28px;
+	height:28px;
+}
+.footer .pics{
+	padding:15px 0 0;
+	height:43px;
+	text-align:center;
+}
+.footer .pics img{
+	display:inline-block;
+	margin:0 2px;
+	height:43px;
+}
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    z-index: 1030;
+    display: block;
+    visibility: visible;
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+    .tooltip.in {
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+    }
+
+    .tooltip.top {
+        margin-top: -3px;
+        padding: 5px 0;
+    }
+
+    .tooltip.right {
+        margin-left: 3px;
+        padding: 0 5px;
+    }
+
+    .tooltip.bottom {
+        margin-top: 3px;
+        padding: 5px 0;
+    }
+
+    .tooltip.left {
+        margin-left: -3px;
+        padding: 0 5px;
+    }
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000000;
+}
+
+.tooltip.top-left .tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000000;
+}
+
+.tooltip.top-right .tooltip-arrow {
+    bottom: 0;
+    right: 5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000000;
+}
+
+.tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000000;
+}
+
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #000000;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000000;
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+    top: 0;
+    left: 5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000000;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+    top: 0;
+    right: 5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000000;
+}
+.softkey_btn_letter {
+	width:25px;
+	BORDER: 1px solid #7b9ebd;
+	PADDING: 1px 1px 0px 2px;
+	FONT-SIZE: 14px;
+	CURSOR: point;
+	height:20px;
+	font-family: Arial;
+}
+.softkey_btn_num {
+	width:25px;
+	BORDER:1px solid #7ebf4f;
+	PADDING: 1px 1px 0px 2px;
+	FONT-SIZE: 12px;
+	CURSOR: point;
+	height:20px;
+	font-family: Arial;
+}
+.softkey_btn_input {
+	BORDER:1px solid #2C59AA;
+	PADDING:2px 2px 0px 2px;
+	FONT-SIZE:12px;
+	CURSOR:pointer;
+	font-family: Arial;
+}
+.softkey_btn_letter {
+	width:25px;
+	BORDER: 1px solid #7b9ebd;
+	PADDING: 1px 1px 0px 2px;
+	FONT-SIZE: 14px;
+	CURSOR: point;
+	height:20px;
+	font-family: Arial;
+}
+.softkey_btn_num {
+	width:25px;
+	BORDER:1px solid #7ebf4f;
+	PADDING: 1px 1px 0px 2px;
+	FONT-SIZE: 12px;
+	CURSOR: point;
+	height:20px;
+	font-family: Arial;
+}
+.softkey_btn_input {
+	BORDER:1px solid #2C59AA;
+	PADDING:2px 2px 0px 2px;
+	FONT-SIZE:12px;
+	CURSOR:pointer;
+	font-family: Arial;
+}

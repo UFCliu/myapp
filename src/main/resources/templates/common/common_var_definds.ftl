@@ -1,0 +1,1 @@
+<#assign b2bstoreuri = "http://172.16.54.228">

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.liugq.mapper.HeroMapper">
+
+	<resultMap id="heroResult" type="com.example.liugq.bean.user.Hero">
+		<result property="id" column="id" />	
+		<result property="name" column="name" />	
+		<result property="picMin" column="pic_min" />
+		<result property="picMax" column="pic_max" />	
+	</resultMap>
+  <select id="getHeroById" resultType="com.example.liugq.bean.user.Hero">
+    select * from hero where id = #{id}
+  </select>
+  
+  <select id="getAllHero" resultMap="heroResult">
+    select * from hero
+  </select>
+</mapper>

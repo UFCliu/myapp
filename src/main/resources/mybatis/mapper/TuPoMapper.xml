@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.liugq.mapper.TuPoMapper" >
+  <resultMap id="BaseResultMap" type="com.example.liugq.bean.dzm.TuPo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="tupo_number" property="tupoNumber" jdbcType="INTEGER" />
+    <result column="tupo_amount" property="tupoAmount" jdbcType="INTEGER" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, tupo_number, tupo_amount, remark
+  </sql>
+  
+  <select id="getAll" resultMap="BaseResultMap" >
+    select 
+    <include refid="Base_Column_List" />
+    from dzm_tupo 
+  </select>
+  
+  <select id="tuPoQuery" resultMap="BaseResultMap" >
+    select 
+    <include refid="Base_Column_List" />
+    <![CDATA[ from dzm_tupo where tupo_number>= #{minTupo} and tupo_number<= #{maxTupo}  ]]>  
+  </select>
+  
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from dzm_tupo
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from dzm_tupo
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  
+  <insert id="insert" parameterType="com.example.liugq.bean.dzm.TuPo" >
+    insert into dzm_tupo (id, tupo_number, tupo_amount, 
+      remark)
+    values (#{id,jdbcType=INTEGER}, #{tupoNumber,jdbcType=INTEGER}, #{tupoAmount,jdbcType=INTEGER}, 
+      #{remark,jdbcType=VARCHAR})
+  </insert>
+  
+  <insert id="insertSelective" parameterType="com.example.liugq.bean.dzm.TuPo" >
+    insert into dzm_tupo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="tupoNumber != null" >
+        tupo_number,
+      </if>
+      <if test="tupoAmount != null" >
+        tupo_amount,
+      </if>
+      <if test="remark != null" >
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="tupoNumber != null" >
+        #{tupoNumber,jdbcType=INTEGER},
+      </if>
+      <if test="tupoAmount != null" >
+        #{tupoAmount,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.liugq.bean.dzm.TuPo" >
+    update dzm_tupo
+    <set >
+      <if test="tupoNumber != null" >
+        tupo_number = #{tupoNumber,jdbcType=INTEGER},
+      </if>
+      <if test="tupoAmount != null" >
+        tupo_amount = #{tupoAmount,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null" >
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+  <update id="updateByPrimaryKey" parameterType="com.example.liugq.bean.dzm.TuPo" >
+    update dzm_tupo
+    set tupo_number = #{tupoNumber,jdbcType=INTEGER},
+      tupo_amount = #{tupoAmount,jdbcType=INTEGER},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+</mapper>

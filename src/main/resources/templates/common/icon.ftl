@@ -1,0 +1,1 @@
+<link rel="shortcut icon" href="/myapp/images/WiFi鸟.ico" type="image/x-icon">

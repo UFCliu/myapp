@@ -1,0 +1,63 @@
+.hidfile-small{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		width: 50px;
+		height: 50px;
+		position: relative;
+		overflow: hidden;
+	cursor:pointer;
+	}
+.hidfile-small .hid-file-up {
+	font-size: 300px;
+	right:0px;
+	top:0px;
+	height: 50px;
+	opacity: 0;
+	filter: Alpha(Opacity = 0);
+	position: absolute;
+	z-index: 99;
+	overflow: hidden;
+	background-color: red;
+	cursor:pointer;
+ }
+ .hidfile-normal{
+		float:left;
+		width: 200px;
+		height: 144px;
+		position: relative;
+		overflow: hidden;
+	cursor:pointer;
+	}
+.hidfile-normal .hid-file-up {
+	font-size: 300px;
+	right:0px;
+	top:0px;
+	height: 144px;
+	opacity: 0;
+	filter: Alpha(Opacity = 0);
+	position: absolute;
+	z-index: 99;
+	overflow: hidden;
+	cursor:pointer;
+ }
+ .hidfile-btn{
+		float:left;
+		width: 70px;
+		height: 40px;
+		position: relative;
+		overflow: hidden;
+	cursor:pointer;
+	}
+.hidfile-btn .hid-file-up {
+	font-size: 300px;
+	right:0px;
+	top:0px;
+	height: 40px;
+	opacity: 0;
+	filter: Alpha(Opacity = 0);
+	position: absolute;
+	z-index: 99;
+	overflow: hidden;
+	cursor:pointer;
+ }

@@ -1,0 +1,25 @@
+/*  --商品信息管理--  */
+.details_form { margin: 0 15px; padding: 5px 0 15px; border: 1px solid #d9d9d9; border-top-width: 2px; }
+.details_form li { margin: 10px 0 0; display: inline-block;  *zoom:1;
+ *display:inline;
+width: 48%; }
+.details_form li label { float: left; width: 40%; height: 32px; line-height: 32px; text-align: right; }
+.details_form li label em { color: #f00; font-size: 14px; line-height: 32px; padding-right: 10px; }
+.details_form li textarea {float: left; width: 72%; height: 132px; line-height: 20px; border: 1px solid #ccc; font-size:12px;
+white-space:nowrap; padding-left:10px; padding-right:10px;}
+.details_form li input { float: left; padding: 0 5px; width: 50%; height: 30px; line-height: 30px; border: 1px solid #ccc; border-radius: 2px; position: relative; background-color: #fff; }
+.details_form li input.radio { float: left; margin: 9px 0 0; width: 14px; height: 14px; line-height: 0; padding: 0; }
+.details_form li .text { float: left; height: 32px; line-height: 32px; padding: 0 40px 0 5px; }
+.details_form li select { float: left; width: 51%; height: 32px; line-height: 32px; border: 1px solid #ccc; border-radius: 2px; position: relative; background-color: #fff; }
+.details_form li .button_file { float: left; width: 65px; height: 32px; line-height: 32px; background-color: #21a27a; border-radius: 2px; color: #fff; position: relative; text-align: center; }
+.details_form li .button_file:hover { background-color: #00885e; }
+.details_form li .button_file:active { line-height: 34px; }
+.button_toolbar_bottom { height: 32px; margin: 15px 0; text-align: center; }
+.button_toolbar_bottom a { display: inline-block; margin: 0 40px;  *zoom:1;
+ *display:inline;
+width: 100px; height: 32px; line-height: 32px; border-radius: 2px; background-color: #21a27a; text-align: center; color: #fff; }
+.button_toolbar_bottom a:hover { background-color: #00885e; }
+.button_toolbar_bottom a:active { line-height: 34px; }
+.button_toolbar_bottom a.back { background-color: #d5d5d5; color: #888; }
+.button_toolbar_bottom a.back:hover { background-color: #ccc; color: #333; }
+/*  --商品信息管理 end--  */

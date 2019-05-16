@@ -1,0 +1,87 @@
+/*  --首页样式--  */
+/*  statistical bar  */
+.statistical_bar { padding: 5px 15px 0 10px; height: 304px; }
+.statistical_bar .statistical { float: left; width: 30%; height: 152px; overflow: hidden; position: relative; }
+.statistical_bar .statistical .inner { margin: 10px 5px 0; padding: 15px; height: 112px; border-radius: 5px; position: relative; }
+.statistical_bar .blue .inner { background-color: #428bca; }
+.statistical_bar .green .inner { background-color: #5cb85c; }
+.statistical_bar .yellow .inner { background-color: #f0ad4e; }
+.statistical_bar .red .inner { background-color: #d9534f; }
+.statistical_bar .statistical .inner .today { height: 50px; padding-bottom: 10px; }
+.statistical_bar .statistical .inner .today .icon { float: left; width: 50px; height: 50px; }
+.statistical_bar .statistical .inner .today .icon_1 { background: url(../images/icon_index_1.png) 0 0 no-repeat; _background: url(../images/icon_index_1.gif) 0 0 no-repeat; }
+.statistical_bar .statistical .inner .today .icon_2 { background: url(../images/icon_index_2.png) 0 0 no-repeat; _background: url(../images/icon_index_2.gif) 0 0 no-repeat; }
+.statistical_bar .statistical .inner .today .icon_3 { background: url(../images/icon_index_3.png) 0 0 no-repeat; _background: url(../images/icon_index_3.gif) 0 0 no-repeat; }
+.statistical_bar .statistical .inner .today .icon_4 { background: url(../images/icon_index_4.png) 0 0 no-repeat; _background: url(../images/icon_index_4.gif) 0 0 no-repeat; }
+.statistical_bar .statistical .inner .today .icon_5 { background: url(../images/icon_index_5.png) 0 0 no-repeat; _background: url(../images/icon_index_5.gif) 0 0 no-repeat; }
+.statistical_bar .statistical .inner .today .icon_6 { background: url(../images/icon_index_6.png) 0 0 no-repeat; _background: url(../images/icon_index_6.gif) 0 0 no-repeat; }
+.statistical_bar .statistical .inner .today em { display: block; margin-left: 70px; height: 15px; line-height: 15px; font-size: 12px; color: #fff; text-align: left; opacity: 0.7; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.statistical_bar .statistical .inner .today strong { display: block; margin-left: 70px; height: 35px; line-height: 35px; font-size: 32px; color: #fff; text-align: left; }
+.statistical_bar .statistical .inner .line { display: block; height: 2px; line-height: 0; font-size: 0; opacity: 0.3; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+background-color: #fff; }
+.statistical_bar .statistical .inner .past { padding-top: 10px; height: 40px; }
+.statistical_bar .statistical .inner .past span em { display: block; height: 15px; line-height: 15px; color: #fff; opacity: 0.7; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.statistical_bar .statistical .inner .past span strong { display: block; height: 25px; line-height: 25px; font-size: 18px; color: #fff; }
+.statistical_bar .statistical .inner .past .yesterday { float: left; text-align: left; width: 50%; }
+.statistical_bar .statistical .inner .past .total { float: right; text-align: right; width: 50%; *width:49.5%;
+}
+/*  todo(待办事项)  */
+.statistical_bar .todo { float: right; width: 40%; height: 304px; }
+.statistical_bar .todo .inner { margin: 10px 0 0 10px; padding: 15px; height: 262px; border: 1px solid #d9d9d9; background-color: #fff; border-radius: 5px; position: relative; vertical-align: top; }
+.statistical_bar .todo .inner .title { height: 20px; line-height: 20px; font-size: 14px; text-align: left; }
+.statistical_bar .todo .inner .list { position: relative; margin-right: 142px; z-index: 1; }
+.statistical_bar .todo .inner .list li { display: block; margin: 16px 0 0; height: 43px; }
+.statistical_bar .todo .inner .list span { float: left; width: 43px; height: 43px; }
+.statistical_bar .todo .inner .list .list_icon_1 { background: url(../images/icon_index_5.png) 0 0 no-repeat; _background: url(../images/icon_index_5.gif) 0 0 no-repeat; }
+.statistical_bar .todo .inner .list .list_icon_2 { background: url(../images/icon_index_6.png) 0 0 no-repeat; _background: url(../images/icon_index_6.gif) 0 0 no-repeat; }
+.statistical_bar .todo .inner .list .list_icon_3 { background: url(../images/icon_index_7.png) 0 0 no-repeat; _background: url(../images/icon_index_7.gif) 0 0 no-repeat; }
+.statistical_bar .todo .inner .list .list_icon_4 { background: url(../images/icon_index_8.png) 0 0 no-repeat; _background: url(../images/icon_index_8.gif) 0 0 no-repeat; }
+.statistical_bar .todo .inner .list p { display: block; text-align: left; margin-left: 53px; padding: 12px 0 0; font-size: 14px; line-height: 18px; }
+.statistical_bar .todo .inner .list p strong { color: #f00; font-size: 16px; padding-left: 10px; }
+.statistical_bar .todo .inner .calendar { position: relative; float: right; margin: 25px 10px 0 0; z-index: 2; width: 122px; height: 166px; background: url(../images/index_calendar_bg.png) 0 0 no-repeat; _background: url(../images/index_calendar_gif.png) 0 0 no-repeat; }
+.statistical_bar .todo .inner .calendar .year { padding: 45px 0 0; text-align: center; height: 25px; line-height: 25px; font-size: 20px; }
+.statistical_bar .todo .inner .calendar .day { text-align: center; height: 80px; line-height: 80px; font-size: 70px; }
+@media screen and (max-width: 920px) {
+.statistical_bar .todo .inner .list { margin-right: 0px; }
+.statistical_bar .todo .inner .calendar { display: none; }
+}
+/*  graph bar  */
+.graph_bar { margin: 15px 15px 0; height: 352px; }
+.graph_bar .graph { float: left; width: 50%;  *margin-left:-3px;
+}
+.graph_bar .graph .m_r_8 { margin-right: 8px; }
+.graph_bar .graph .m_l_7 { margin-left: 7px; }
+.graph_bar .graph .inner { height: 350px; background-color: #fff; position: relative; }
+/*  message_bar  */
+.message_bar { margin: 15px; height: 377px; }
+.message_bar .message { float: left; width: 50%;  *margin-left:-3px; *overflow:hidden;
+}
+.message_bar .message .m_r_8 { margin-right: 8px; }
+.message_bar .message .m_l_7 { margin-left: 7px; }
+.message_bar .message .inner { border: 1px solid #d9d9d9; height: 375px; border-radius: 5px; background-color: #fff; position: relative; }
+.message_bar .message .inner .tab_menu { height: 40px; border-bottom: 1px solid #d9d9d9; background-color: #eee; }
+.message_bar .message .inner .tab_menu li { float: left; width: 24%; height: 40px; line-height: 40px; text-align: center; font-size: 14px; cursor: pointer; position: relative; }
+.message_bar .message .inner .tab_menu li .msg_num { color: #f00; }
+.message_bar .message .inner .tab_menu li.cur { height: 41px; margin: -1px 0 0 -1px; border: 1px solid #d9d9d9; border-bottom: 1px solid #fff; background-color: #fff; border-radius: 5px 5px 0 0; position: relative; color: #21a27a; font-weight: 800; }
+.message_bar .message .inner .tab_cont { display: none; height: 334px; padding: 0 20px; }
+.message_bar .message .inner .tab_cont .list { height: 300px;*height: 300px;*width: 100%; *overflow:hidden;*text-overflow:ellipsis;}
+.message_bar .message .inner .tab_cont .list li { display: block; float: none; height: 45px; padding: 15px 0 13px; border-bottom: 1px solid #d9d9d9; }
+.message_bar .message .inner .tab_cont .list li .pic { float: left; width: 34px; height: 34px; border: 2px solid #7ac7af; padding: 1px; border-radius: 2px; background-color: #fff; }
+.message_bar .message .inner .tab_cont .list li .pic img { width: 34px; height: 34px; }
+.message_bar .message .inner .tab_cont .list li .info { margin-left: 50px; height: 20px; line-height: 20px; }
+.message_bar .message .inner .tab_cont .list li .info .user { float: left; color: #666; }
+.message_bar .message .inner .tab_cont .list li .info .datetime { float: left; color: #999; }
+.message_bar .message .inner .tab_cont .list li .info .status { float: right; }
+.message_bar .message .inner .tab_cont .list li .info .status.blue { color: #006ecc; }
+.message_bar .message .inner .tab_cont .list li .info .status.green { color: #21a27a; }
+.message_bar .message .inner .tab_cont .list li .info .status.red { color: #f00; }
+.message_bar .message .inner .tab_cont .list li .info .status.yellow { color: #ff7800; }
+.message_bar .message .inner .tab_cont .list li .info .status.whitesmoke { color: #F5F5F5; }
+.message_bar .message .inner .tab_cont .list li .msg { margin-left: 50px; height: 25px; line-height: 25px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 14px;  *text-align:left;
+}
+.message_bar .message .inner .tab_cont .more { height: 34px; line-height: 34px; text-align: center; }
+.message_bar .message .inner .tab_cont .more a { display: block; text-align: left; margin: 0 auto; padding-left: 15px; width: 60px; height: 34px; line-height: 34px; background: url(../images/icon_more.png) right center no-repeat; _background: url(../images/icon_more.gif) right center no-repeat; color: #545454; }
+.message_bar .message .inner .tab_cont .more a:hover { text-decoration: underline; }
+/*  --首页样式 end--  */
